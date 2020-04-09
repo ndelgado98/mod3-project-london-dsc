@@ -138,7 +138,7 @@ This section is made of 2 steps:
 
 There are many different metrics we might use for evaluating a classification model. Accuracy is intuitive, but can be misleading, especially if you have class imbalances in your target. Perhaps, depending on you're defining things, it is more important to minimize false positives, or false negatives.<br>
 We recommend you implement the following process (if you decide to do something different make sure you explain your logic):
-- Model *discrimination* comparison:
+- Model *discrimination* comparison (using ROC_AUC):
   - Compare the results of the previous step. Declare a winner and explain the logic behind your decision. (Remember, you get paid to solve problems. Your scoring metric is not everything)
 - Threshold selection:
   - Estimate prevalence for the deployment environment
@@ -166,7 +166,7 @@ In this case, your "deployment" comes in the form of the deliverables listed abo
  - "How confident are you in the predictive quality of the results?"
  - "What are some of the things that could cause the results to be wrong?"
  
-And most importantly:<br>
+And most importantly:
 - Actionable problem solving recommendations:
   - What recommendations can you give to your stakeholders? Make sure is something they can directly act on. For example: 'Refer to a doctor any patient with glucose higher than x'
 
